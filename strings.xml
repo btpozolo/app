@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">NounsOnAPhone</string>
+
+    <!--Strings for inputWords-->
+    <string name="edit_text">Enter a noun</string>
+    <string name="next">Save Word</string>
+    <string name="done">Start Game</string>
+
+
+    <string name="round_header">Round will Start</string>
+    <string name="start">Start</string>
+
+    <string name="pass_header">Pass to next team</string>
+
+    <string name="game_over">Game Over</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="team1score">team1score</string>
+    <string name="team2score">team2score</string>
+
+    <string name="MY_PREFS_NAME">MyPrefsFile</string>
+
+    <string name="game_instructions">Tap screen for next word</string>
+
+    <string name="round1">Round 1</string>
+    <string name="round2">Round 2</string>
+    <string name="round3">Round 3</string>
+    <string name="round1desc">In this round you will try to get your team
+    to guess the word on the screen by describing it using as many words as you like. \n\n
+    You cannot say any part of the word, act, or say \"Rhymes with…\", \"Starts with…\", etc</string>
+    <string name="round2desc">In this round you will try to get your team
+    to guess the word on the screen by describing it using only ONE word</string>
+    <string name="round3desc">In this round you will try to get your team
+    to guess the word on the screen by acting only</string>
+</resources>

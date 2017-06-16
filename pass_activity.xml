@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <TextView
+        android:id="@+id/passTitle"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass_header"
+        android:textStyle="bold"
+        android:textSize="36dp"/>
+    <Button
+        android:layout_below="@+id/passTitle"
+        android:id="@+id/nextPlayerStart"
+        android:text="@string/start"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/team1ScorePass"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/team2ScorePass"
+            android:gravity="end"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

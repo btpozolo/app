@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <TextView
+        android:id="@+id/roundTextView"
+        android:layout_below="@+id/scores"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/round_header"
+        android:textStyle="bold"
+        android:textSize="36dp"/>
+    <TextView
+        android:id="@+id/roundDesc"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startRound"
+        android:layout_centerInParent="true"
+        android:text="@string/round1desc"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_below="@+id/roundTextView"
+        android:id="@+id/startRound"
+        android:text="@string/start"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/scores">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/team1Score"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/team2Score"
+            android:gravity="end"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/timeLeftInRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Time remaining in turn: "/>
+</RelativeLayout>
